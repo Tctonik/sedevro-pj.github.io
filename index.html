@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#bio">Био</a>
+            <a href="#projects">Проекты</a>
+            <a href="login.php" class="admin-link">Админ-панель</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="bio" class="tile-section">
+            <h1 class="tile-title">Обо мне</h1>
+            <div class="tile-grid">
+                <div class="tile tile-large">
+                    <div class="tile-content" id="bio-content">
+                        <!-- Биография загружается из bio.json -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="tile-section">
+            <h2 class="tile-title">Мои проекты</h2>
+            <div class="tile-grid" id="projects-container">
+                <!-- Проекты загружаются из projects.json -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
